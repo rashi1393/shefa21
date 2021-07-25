@@ -43,14 +43,15 @@ function setup() {
 
 
 function draw() {
-  rectMode(CENTER);
-  background(0);
+	Engine.update(engine)
+  	rectMode(CENTER);
+	background(0);
 
-  ground.display();
-  
-  ellipse(ball.position.x,ball.position.y,20)
+	ground.display();
+	
+	ellipse(ball.position.x,ball.position.y,20)
 
-  drawSprites();
+	drawSprites();
  
 }
 
